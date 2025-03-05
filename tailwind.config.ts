@@ -6,7 +6,19 @@ const config: Config = withMT({
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  theme: {},
+  theme: {
+    extend: {
+      transformStyle: {
+        "preserve-3d": "preserve-3d",
+      },
+      backfaceVisibility: {
+        hidden: "hidden",
+      },
+      rotate: {
+        "y-180": "rotateY(180deg)",
+      },
+    },
+  },
   plugins: [],
 });
 

@@ -1,7 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
-import { Layout, FixedPlugin } from "@/components";
+import { Layout } from "@/components";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -10,9 +10,8 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "NextJS Tailwind Course Landing Page",
-  description:
-    "Introducing Tailwind Course Landing Page, a versatile and engaging landing page template designed using Tailwind CSS and Material Tailwind.",
+  title: "RCCG (Covenant Parish, Espoo)",
+  description: "RCCG, Covenant Parish, The place of Bethel",
 };
 
 export default function RootLayout({
@@ -23,17 +22,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <script
+        {/* <script
           defer
-          data-site="YOUR_DOMAIN_HERE"
+          data-site="https://rccgcovenant.org/"
           src="https://api.nepcha.com/js/nepcha-analytics.js"
-        ></script>
+        ></script> */}
         <link rel="shortcut icon" href="/favicon.png" type="image/png" />
       </head>
       <body className={roboto.className}>
         <Layout>
           {children}
-          <FixedPlugin />
         </Layout>
       </body>
     </html>

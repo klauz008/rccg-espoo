@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { Typography, Card, CardBody, Avatar } from "@material-tailwind/react";
 
-function TESTIMONIAL() {
+function ABOUTUS() {
   return (
     <section className="px-8 py-40">
       <div className="container mx-auto">
@@ -21,15 +21,6 @@ function TESTIMONIAL() {
             onPointerEnterCapture={undefined}
             onPointerLeaveCapture={undefined}
           >
-            <div className="w-full xl:w-[600px] flex items-center overflow-hidden rounded-xl justify-center col-span-2 h-full">
-              <Image
-                width={568}
-                height={568}
-                src="/image/bible.webp"
-                alt="testimonial image"
-                className="w-full h-full scale-110 object-cover"
-              />
-            </div>
             <div className="col-span-2 w-full">
               <Typography
                 variant="h3"
@@ -39,7 +30,7 @@ function TESTIMONIAL() {
                 onPointerEnterCapture={undefined}
                 onPointerLeaveCapture={undefined}
               >
-                Our Beliefs
+                About Us
               </Typography>
               <Typography
                 className="mb-1 w-full font-normal !text-gray-500"
@@ -47,36 +38,39 @@ function TESTIMONIAL() {
                 onPointerEnterCapture={undefined}
                 onPointerLeaveCapture={undefined}
               >
-                At RCCG (Covenant Parish) Espoo, we believe in the divine
-                inspiration of the Bible, the Deity of Jesus Christ, and the
-                power of the Holy Spirit. Our faith is rooted in the timeless
-                truths that guide us to live sanctified lives and experience the
-                fullness of God’s blessings.
+                The Covenant Parish is a parish belonging to The Redeemed
+                Christian Church of God (RCCG), which is part of a global
+                network of thousands of parishes. RCCG was established in
+                Nigeria in 1952, starting as a small home group known as the
+                Glory of God fellowship in Lagos, West Africa. The name later
+                changed to The Redeemed Christian Church of God following a
+                vision from the founder, Pa Akindayomi, despite his inability to
+                read or write. With just nine members initially, the fellowship
+                grew rapidly due to reports of miraculous occurrences. Pastor
+                E.A. Adeboye succeeded Pa Akindayomi in 1980 and now serves as
+                the General Overseer worldwide. Since 1981, RCCG has experienced
+                significant growth with over 2000 parishes in Nigeria alone and
+                a strong presence in various African countries such as Cote
+                D'Ivoire, Ghana, and South Africa. Additionally, RCCG has
+                expanded into Europe with established churches in countries like
+                the United Kingdom, Spain, and France.
               </Typography>
-              {/* <div className="grid mb-4">
-                <div className="flex items-center gap-2">
-                  <span className="h-1 w-1 bg-gray-500 rounded-full" />
-                  <Typography
-                    className="w-full font-normal !text-gray-500"
-                    placeholder={undefined}
-                    onPointerEnterCapture={undefined}
-                    onPointerLeaveCapture={undefined}
-                  >
-                    International course collection in 10 languages
-                  </Typography>
-                </div>
-                <div className="flex items-center gap-2">
-                  <span className="h-1 w-1 bg-gray-500 rounded-full" />
-                  <Typography
-                    className="w-full font-normal !text-gray-500"
-                    placeholder={undefined}
-                    onPointerEnterCapture={undefined}
-                    onPointerLeaveCapture={undefined}
-                  >
-                    Certified include
-                  </Typography>
-                </div>
-              </div> */}
+              <Typography
+                className="mb-1 w-full font-normal !text-gray-500"
+                placeholder={undefined}
+                onPointerEnterCapture={undefined}
+                onPointerLeaveCapture={undefined}
+              >
+                The RCCG Covenant Parish was founded on May 10, 2010, with its
+                first service held at Cindy's restaurant with around 20
+                attendees. Over time, RCCG-HOD has seen a steady increase in
+                membership necessitating several relocations before settling at
+                the Riviera Plaza and Conference Centre NE in Calgary
+                temporarily. The church is currently finalizing its new
+                auditorium building project and plans to move into it by May
+                2024 for further growth and expansion under God's guidance.
+              </Typography>
+
               <div className="flex items-center mt-8 gap-4">
                 <Avatar
                   variant="circular"
@@ -112,6 +106,15 @@ function TESTIMONIAL() {
                 </div>
               </div>
             </div>
+            <div className="w-full xl:w-[600px] flex items-center overflow-hidden rounded-xl justify-center col-span-2 h-full">
+              <Image
+                width={568}
+                height={568}
+                src="/image/daddy.jpeg"
+                alt="testimonial image"
+                className="w-full h-full scale-110 object-cover"
+              />
+            </div>
           </CardBody>
         </Card>
       </div>
@@ -119,4 +122,4 @@ function TESTIMONIAL() {
   );
 }
 
-export default TESTIMONIAL;
+export default ABOUTUS;

@@ -3,26 +3,28 @@ import { Navbar, Footer } from "@/components";
 
 // sections
 import Hero from "./hero";
-import OutImpressiveStats from "./out-impressive-stats";
+import OurChurch from "./out-impressive-stats";
 import CoursesCategories from "./courses-categories";
 import ExploreCourses from "./explore-courses";
 import Testimonial from "./testimonial";
 import Events from "./events";
-import StudentsFeedback from "./students-feedback";
+import { MembersFeedback } from "./members-feedback";
 import TrustedCompany from "./trusted-companies";
+import ABOUTUS from "./about-us";
 
 export default function Campaign() {
   return (
     <>
       <Navbar />
       <Hero />
-      <OutImpressiveStats />
+      <OurChurch />
       <CoursesCategories />
-      <ExploreCourses />
+      {/* <ExploreCourses /> */}
       <Testimonial />
-      <Events />
-      <StudentsFeedback />
-      <TrustedCompany />
+      <ABOUTUS />
+      {/* <Events /> */}
+      <MembersFeedback />
+      {/* <TrustedCompany /> */}
       <Footer />
     </>
   );
